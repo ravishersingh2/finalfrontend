@@ -113,7 +113,7 @@ export function addDayData(data) {
                 progressBar: true,
               };
               toastr.clear();
-              setTimeout(() => toastr.success("Data Added Successfullt"), 0);
+              setTimeout(() => toastr.success("Data Added Successfully"), 0);
             dispatch(deleteDay(data));
         }).catch((e) => console.log(e));
     }
