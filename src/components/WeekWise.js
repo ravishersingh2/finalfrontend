@@ -145,7 +145,7 @@ class WeekWise extends Component {
                     <div className="card-body">
                       {x["totals"] && x["totals"].length > 0 && (
                         <span style={{ textDecoration: "underline" }}>
-                          Diet Total
+                          Daily Totals:
                           <br />
                           <br />
                         </span>
@@ -160,10 +160,12 @@ class WeekWise extends Component {
                           );
                         })
                       ) : (
-                        <span>No Diet Total Found</span>
+                        <span>Click date to get started tacking!</span>
                       )}
                     </div>
                   </div>
+
+
                 );
               })}{" "}
           </>
@@ -206,15 +208,14 @@ class WeekWise extends Component {
                       <thead className="thead-dark">
                         <tr>
                           <th scope="col">Food</th>
-                          <th scope="col">Serv</th>
-                          <th scope="col">CAL</th>
-                          <th scope="col">CARB</th>
-                          <th scope="col">PROT</th>
-                          <th scope="col">FAT</th>
-                          <th scope="col">SOD</th>
-                          <th scope="col">FIBR</th>
-                          <th scope="col">SUGR</th>
-                          <th scope="col">VITA</th>
+                          <th scope="col">Serving</th>
+                          <th scope="col">Calories</th>
+                          <th scope="col">Carbs</th>
+                          <th scope="col">Protein</th>
+                          <th scope="col">Fat</th>
+                          <th scope="col">Sodium</th>
+                          <th scope="col">Fiber</th>
+                          <th scope="col">Sugar</th>
                           <th scope="col">Delete</th>
                         </tr>
                       </thead>
@@ -232,7 +233,6 @@ class WeekWise extends Component {
                           <td>{x['sod']}</td>
                           <td>{x['fibr']}</td>
                           <td>{x['sugr']}</td>
-                          <td>{x['vita']}</td>
                           <td>
                             <button type="button" onClick={()=>this.onDelete(x['_id'])} className="btn btn-danger cursorSection">
                               Delete

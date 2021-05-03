@@ -3,40 +3,6 @@ import runtimeEnv from '@mars/heroku-js-runtime-env'
 import toastr from "toastr";
 import "toastr/build/toastr.min.css";
 
-function moviesFetched(movies) {
-    return {
-        type: actionTypes.FETCH_MOVIES,
-        movies: movies
-    }
-}
-
-function movieFetched(movie) {
-    return {
-        type: actionTypes.FETCH_MOVIE,
-        selectedMovie: movie[0]
-    }
-}
-
-function movieSet(movie) {
-    return {
-        type: actionTypes.SET_MOVIE,
-        selectedMovie: movie
-    }
-}
-
-function moviesSearched(searchData){
-    return {
-        type: actionTypes.SEARCH_MOVIE,
-        selectedMovie: searchData
-    }
-}
-
-export function setMovie(movie) {
-    return dispatch => {
-        dispatch(movieSet(movie));
-    }
-}
-
 export function getEachDay(data){
     return {
         type: actionTypes.GETEACHDAY,
@@ -114,7 +80,7 @@ export function deleteDayData(data) {
                 progressBar: true,
               };
               toastr.clear();
-              setTimeout(() => toastr.success("Data Deleted Successfullt"), 0);
+              setTimeout(() => toastr.success("Data Deleted Successfully"), 0);
             dispatch(deleteDay(data));
             // window.location.reload()
         }).catch((e) => console.log(e));
