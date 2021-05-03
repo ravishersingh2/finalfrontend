@@ -97,7 +97,7 @@ class WeekWise extends Component {
       <div className="row" style={{ margin: "40px" }}>
           <Modal show={this.state.show}>
         <Modal.Header>
-          <Modal.Title>Add Food Form</Modal.Title>
+          <Modal.Title>Select the food to add.</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <>
