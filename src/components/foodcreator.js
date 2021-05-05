@@ -66,7 +66,7 @@ class Foodcreator extends Component {
 
                         <Form.Group as={Col} controlId="cal">
                             <Form.Label>Calories</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.cal} type="number" placeholder="kCal per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.cal} type="number" min="0" placeholder="kCal per serving" />
                         </Form.Group>
 
                     </Form.Row>
@@ -75,17 +75,17 @@ class Foodcreator extends Component {
 
                         <Form.Group as={Col} controlId="carb">
                             <Form.Label>Carbs (g)</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.carb} type="number" placeholder="g per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.carb} type="number" min="0" placeholder="g per serving" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="prot">
                             <Form.Label>Protein (g)</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.prot} type="number" placeholder="g per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.prot} type="number" min="0" placeholder="g per serving" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="fat">
                             <Form.Label>Fat (g)</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.fat} type="number" placeholder="g per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.fat} type="number" min="0" placeholder="g per serving" />
                         </Form.Group>
 
                     </Form.Row>
@@ -94,17 +94,17 @@ class Foodcreator extends Component {
 
                         <Form.Group as={Col} controlId="sod">
                             <Form.Label>Sodium (mg)</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.sod} type="number" placeholder="mg per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.sod} type="number" min="0" placeholder="mg per serving" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="fibr">
                             <Form.Label>Fiber (g)</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.fibr} type="number" placeholder="g per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.fibr} type="number" min="0" placeholder="g per serving" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="sugr">
                             <Form.Label>Sugar (g)</Form.Label>
-                            <Form.Control onChange={this.updateDetails} value={this.state.details.sugr} type="number" placeholder="g per serving" />
+                            <Form.Control onChange={this.updateDetails} value={this.state.details.sugr} type="number" min="0" placeholder="g per serving" />
                         </Form.Group>
 
                     </Form.Row>
